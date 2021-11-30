@@ -58,7 +58,7 @@ namespace currency_converter
             mycon();
             DataTable dt = new DataTable();
             //spec command
-            cmd = new SqlCommand("select Id, Amount, CurrencyName from CurrencyTable", con);
+            cmd = new SqlCommand("SELECT Id, Amount, CurrencyName FROM CurrencyTable", con);
             cmd.CommandType = CommandType.Text;
             da = new SqlDataAdapter(cmd);
             da.Fill(dt);
